@@ -1,11 +1,11 @@
 {
   "version": 1,
   "code": {
-    "owner": "{ORG}",
-    "repo": "{REPO}",
+    "owner": "MaBanguero",
+    "repo": "boiler-plate-vass",
     "source": {
       "type": "github",
-      "url": "https://github.com/{ORG}/{REPO}"
+      "url": "https://github.com/MaBanguero/boiler-plate-vass"
     }
   },
   "content": {
@@ -16,49 +16,56 @@
   },
   "cdn": {
     "live": {
-      "host": "main--{SITE}--{ORG}.aem.live"
+      "host": "main--boiler-plate-vass--mabanguero.aem.live"
     },
     "preview": {
-      "host": "main--{SITE}--{ORG}.aem.page"
+      "host": "main--boiler-plate-vass--mabanguero.aem.page"
     }
   },
   "headers": {},
   "public": {
     "default": {
-      "commerce-core-endpoint": "{ENDPOINT}",
-      "commerce-endpoint": "{CS_ENDPOINT}",
+      "commerce-core-endpoint": "https://www.aemshop.net/graphql",
+      "commerce-endpoint": "https://www.aemshop.net/cs-graphql",
+      "commerce-assets-enabled": true,
       "headers": {
         "all": {
           "Store": "default"
         },
         "cs": {
-          "Magento-Store-Code": "{STORE_CODE}",
-          "Magento-Store-View-Code": "{STORE_VIEW_CODE}",
-          "Magento-Website-Code": "{WEBSITE_CODE}",
-          "x-api-key": "{COMMERCE_API_KEY}",
-          "Magento-Environment-Id": "{COMMERCE_ENVIRONMENT_ID}"
+          "Magento-Store-Code": "main_website_store",
+          "Magento-Store-View-Code": "default",
+          "Magento-Website-Code": "base",
+          "x-api-key": "4dfa19c9fe6f4cccade55cc5b3da94f7",
+          "Magento-Environment-Id": "f38a0de0-764b-41fa-bd2c-5bc2f3c7b39a"
         }
       },
       "analytics": {
+        "aep-ims-org-id": null,
+        "aep-datastream-id": null,
         "base-currency-code": "USD",
-        "environment": "Production",
-        "store-id": "{STORE_ID}",
+        "environment": "Testing",
+        "environment-id": "f38a0de0-764b-41fa-bd2c-5bc2f3c7b39a",
+        "store-code": "main_website_store",
+        "store-id": 1,
         "store-name": "Main Website Store",
-        "store-url": "{DOMAIN}",
-        "store-view-id": "{STORE_VIEW_ID}",
+        "store-url": "https://www.aemshop.net",
+        "store-view-code": "default",
+        "store-view-id": 1,
         "store-view-name": "Default Store View",
-        "website-id": "{WEBSITE_ID}",
+        "website-code": "base",
+        "website-id": 1,
         "website-name": "Main Website"
       },
       "plugins": {
         "picker": {
-           "rootCategory": "{YOUR_ROOT_CATEGORY_ID}"
-         }
+          "rootCategory": "YOUR_ROOT_CATEGORY_ID"
+        }
       }
     }
   },
   "robots": {
-    "txt": "User-agent: *\nAllow: /\nDisallow: /drafts/\nDisallow: /enrichment/\nDisallow: /tools/\nDisallow: /plugins/experimentation/\n\nSitemap: https://{DOMAIN}/sitemap-index.xml"
+    "txt": "User-agent: *\nAllow: /\nDisallow: /drafts/\nDisallow: /enrichment/\nDisallow: /tools/\nDisallow: /plugins/experimentation/\n\nSitemap: https://main--boiler-plate-vass--mabanguero.aem.live/sitemap-index.xml"
   },
   "access": {
     "admin": {
